@@ -20,7 +20,7 @@ body {
   }
   
   .product {
-    background: white;
+    background: rgb(165, 93, 93);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -35,6 +35,7 @@ body {
     padding: 8px 12px;
     margin-top: 10px;
     cursor: pointer;
+    
   }
   
   .cart {
@@ -43,7 +44,7 @@ body {
     top: 0;
     width: 300px;
     height: 100%;
-    background: white;
+    background: rgb(177, 62, 62);
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0,0,0,0.2);
   }
@@ -51,3 +52,39 @@ body {
   .hidden {
     display: none;
   }
+  .product {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect (desktop) */
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Click / active effect */
+.product:active {
+  transform: scale(0.97);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Mobile-friendly touch feedback */
+@media (hover: none) {
+  .product:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+.product {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
